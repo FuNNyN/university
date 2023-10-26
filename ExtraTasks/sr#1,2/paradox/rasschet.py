@@ -96,3 +96,6 @@ print(F(random.randint(1,3)))
 
 
 
+
+
+
