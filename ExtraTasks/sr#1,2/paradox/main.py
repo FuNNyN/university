@@ -1,5 +1,5 @@
-import monty_hall
-import birthday
-print(monty_hall())
-print(birthday(100,10))
+from dddd import N
+from birthday import birth
+print(N(100), '%')
+print(birth(100,10))
 
