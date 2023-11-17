@@ -6,8 +6,7 @@ def record(N):
         s.writelines(str(N))
         s.close()
         stroka = open("record.txt",mode="r",encoding='utf8')
-        record = stroka.readline()
+        rec = int(stroka.readline())
     else:
-        record = s
-    return record
-print(record(int(input())))
+        rec = s
+    return rec

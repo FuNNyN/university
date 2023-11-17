@@ -1,4 +1,5 @@
 import random
+import record
 f = open("Words.txt",encoding='utf8')
 d = []
 for i in range(6):
@@ -21,6 +22,7 @@ if oi == 2:
 if oi == 3:
     nowlife = 3
 newword = zadslovo
+N = 0
 while True:
     if nowlife == 0 or (b1+b2+b3+b4+b5).count('□') == 0 or slindex == 4:
         if slindex == 4:
@@ -28,9 +30,14 @@ while True:
             break
         if nowlife == 0 :
             print('У вас закончились жизни')
+            N = 0
             break
         else:
-            print('Вы отгадали \nХотите ли вы еще раз сыграть? \n 1.Да \n 2.Нет')
+            print('Вы отгадали ')
+            N+=1
+            print('Ваш рекорд : ', record.record(N))
+            print('Ваш текущий счет : ', N)
+            print('Хотите ли вы еще раз сыграть? \n 1.Да \n 2.Нет')
             p = int(input())
             if p == 2:
                 print("игра окончена")
