@@ -36,7 +36,14 @@ while True:
                 print("игра окончена")
                 break
             else:
-                nowlife = 5
+                print('Выберите уровень сложности : \n 1.Легкая \n 2.Средняя \n 3.Сложная')
+                oi = int(input())
+                if oi == 1:
+                    nowlife = 7
+                if oi == 2:
+                    nowlife = 5
+                if oi == 3:
+                    nowlife = 3
                 slindex+=1
                 newword = d[slmassive[slindex]]
                 b1 = '□'
