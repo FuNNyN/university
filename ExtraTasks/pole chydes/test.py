@@ -1,3 +1,4 @@
-f = open("record.txt",mode='r')
-s = int(f.readline())
-print(s)
+stroka = 'osdoeb'
+index = stroka.index('b')
+sdsdsdsds = stroka[:index] + 'w' + stroka[index+1:]
+print(sdsdsdsds)
