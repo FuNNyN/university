@@ -1,9 +1,7 @@
 def read_file(name):
     text_fail = open("data.txt", mode="r", encoding="utf8")
     text = text_fail.read().splitlines()
-    print(text)
     string_list = [text[i].split(' ') for i in range(len(text))]
-    print(string_list)
     uniue = []
     for i in range(len(string_list)):
         for word in string_list[i]:
