@@ -97,8 +97,8 @@ def pole():
             popo = 1
             for i in range(len(newword)-1):
                 if w[i]!=newword[i]:
-                    print('Неправильно.Вы теряете жизнь')
-                    nowlife -= 1
+                    print('Неправильно')
+                    nowlife = 0
                     popo = 0
                     break
                 if popo == 1:
