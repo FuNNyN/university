@@ -10,7 +10,7 @@ def read_file(name):
                 uniue.append(word)
     words_set = set(uniue)
     return sorted(words_set)
-words = read_file('data.txt')
+words = read_file('data.txt.txt')
 
 def save_file(name, words):
     new_text = open(f"{name}", mode='w', encoding='utf8')
